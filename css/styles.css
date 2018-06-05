@@ -1,0 +1,108 @@
+*{
+	font-family: helvetica;
+}
+
+/*Tags*/
+
+body{
+	background-color:#FFA100; 
+}
+main{
+	width: 1500px;
+	height: 950px;
+	display: flex;
+}
+
+input{
+	margin: 10px;
+	height: 20px;
+}
+
+button{
+	display: inline;
+	height: 30px;
+	margin-left: 10px;
+	color: white;
+	background-color: #FF5252;	
+}
+
+h3{
+	padding-left: 10px;
+}
+
+header{
+	display:block;
+	width: 400px;
+}
+
+article{
+	display:block;
+	width: 400px;
+}
+
+/*Id's*/
+
+#nJugador{
+	width: 350px;
+}
+
+#area1{
+	width:400px;
+	height:550px; ;
+	margin-top: 80px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#tablero{
+	width: 800px;
+	height: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 10px;
+	margin-top: 30px;
+}
+
+#tablero div{
+	margin: 10px;
+}
+
+#area1{
+	background-color: #FFC107;
+	margin-bottom: 80px;
+	padding:20px;
+}
+
+#ranking{
+	
+	width: 300px;
+	height: 200px;
+}
+
+
+
+/*Class*/
+
+.custom{
+	height: 30px;
+}
+
+.center{
+	text-align: center;
+}
+
+.flipping {
+    transform: translate(0, 20px) rotateY(90deg);
+	-webkit-transform: translate(0, 20px) rotateY(90deg);
+}
+
+.card{
+	-webkit-transition:-webkit-transform 0.3s;
+	transition:transform 0.3s;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Memotest Game in JS">
+	<meta name="autor" content="Cobecc">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memotest</title>
+	<link rel='shortcut icon' type='image/x-icon' href='./res/icon.ico' />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<main>	
+		<section id="area1">	
+
+			<header>
+				<h1>Memotest! Encuentra a la pareja!</h1>  
+			</header>
+			<section class="dificultad">
+				<h3 class="center">Elija la dificultad:</h3>
+				<form>
+					<input type="radio" name="lvl" value="facil" > Fácil 
+					<input type="radio" name="lvl" value="intermedio" checked> Intermedio	
+					<input type="radio" name="lvl" value="experto">	Dificil
+				</form>
+			</section>
+			<article> 
+				<h3>Por favor ingrese su nombre: </h3>
+				<input type="text" name="nombreJugador" id="nJugador">
+				<button id="cargar">Cargar y jugar</button><!-- Carga el nombre del jugador -->
+				<button id="reset">Reset tablero </button>
+		
+			</article>
+
+			<div>
+				<p id="resu"></p>
+			</div>
+
+			<div>
+				<p id="turnosRestantes"></p>
+			</div>
+			<table id="ranking">
+				
+			</table>
+		</section>	
+		<section  id="tablero">
+
+		</section>
+		<!-- niv de dificultad -->
+	
+			
+	</main>	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/Carta.js"></script>
+	<script type="text/javascript" src="js/Jugada.js"></script>
+	<script type="text/javascript" src="js/Tablero.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

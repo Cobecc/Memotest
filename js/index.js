@@ -68,6 +68,7 @@ function dificultad(){
 
 function genRank(){
     var items = JSON.parse(localStorage.getItem('rank'));
+    console.log(items);
     var tabla = document.getElementById('ranking');
     var titulos = document.createElement('tr');
     var nombre = document.createElement('th');
@@ -82,9 +83,9 @@ function genRank(){
 
 
     tabla.appendChild(titulos);
-
-    items.forEach(rank => {
-        
+    if(items !== null){
+        items.forEach(rank => {
+        console.log(items);  
         var row = document.createElement('tr');
         tabla.appendChild(row);
         var nombre = document.createElement('td');
@@ -98,7 +99,9 @@ function genRank(){
         row.appendChild(dif);
         row.appendChild(puntos);
 
-    });
+        });
+    }
+   
     
  
 
